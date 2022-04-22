@@ -6,17 +6,21 @@
 </template>
 
 <script lang="ts">
-import { useStore } from "vuex";
+import { useRouter } from "vue-router";
 import { onMounted } from "vue";
 import Header from "@/components/Header/Header.vue";
 
 export default {
   components: { Header },
   setup() {
-    const store = useStore();
+    const router = useRouter();
 
     onMounted(() => {
-      store.dispatch("bindAppInfo");
+      let path = localStorage.getItem('path');
+      if(path) {
+        localStorage.removeItem('path');
+        router.push(path);
+      }
     });
 
     return {};
