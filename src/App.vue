@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { useRouter } from "vue-router";
-// import { onMounted } from "vue";
+import { onMounted } from "vue";
 import Header from "@/components/Header/Header.vue";
 
 export default {
@@ -15,13 +15,13 @@ export default {
   setup() {
     const router = useRouter();
 
-    // onMounted(() => {
-    //   let path = localStorage.getItem('path');
-    //   if(path) {
-    //     localStorage.removeItem('path');
-    //     router.push(path);
-    //   }
-    // });
+    onMounted(() => {
+      let path = localStorage.getItem('path');
+      if(path) {
+        localStorage.removeItem('path');
+        router.push(path);
+      }
+    });
 
     return {};
   },
