@@ -1,6 +1,8 @@
 export class RouterNames {
   static HOME = "Home";
-  static ABOUT = "About";
-  static DEMO_PAGE = "DemoPage";
+  static MAIN_PAGE = "main";
+  static ORTO_PAGE = "orto";
+  static ARNIA_PAGE = "arnia";
+  static POLLAIO_PAGE = "pollaio";
   static NOTFOUND = "NOTFOUND";
 }

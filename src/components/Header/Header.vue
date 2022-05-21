@@ -1,22 +1,27 @@
 <template>
   <div class="header">
-    <div class="title"> Microfarm </div>
-    <router-link :to="'/'+$options.ABOUT">Home</router-link>
-    <router-link :to="'/'+$options.DEMO_PAGE">Demo</router-link>
+    <div class="title">Microfarm</div>
+    <div class="navigation">
+      <router-link :to="'/' + $options.MAIN_PAGE"> Home </router-link>
+      <router-link :to="'/' + $options.ORTO_PAGE"> Orto </router-link>
+      <router-link :to="'/' + $options.ARNIA_PAGE"> Arnia </router-link>
+      <router-link :to="'/' + $options.POLLAIO_PAGE"> Pollaio </router-link>
+      <a href="https://www.kickstarter.com/" target="_blank"> Crowdfunding </a>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { RouterNames } from '@/router/RouterNames';
+import { RouterNames } from "@/router/RouterNames";
 
 export default {
   name: "Header",
-  DEMO_PAGE: RouterNames.DEMO_PAGE,
-  ABOUT: RouterNames.ABOUT,
+  ORTO_PAGE: RouterNames.ORTO_PAGE,
+  MAIN_PAGE: RouterNames.MAIN_PAGE,
+  ARNIA_PAGE: RouterNames.ARNIA_PAGE,
+  POLLAIO_PAGE: RouterNames.POLLAIO_PAGE,
   setup() {
-
-    return {
-    };
+    return {};
   },
 };
 </script>
