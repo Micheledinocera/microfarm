@@ -16,7 +16,10 @@ export default {
         {
           property: "og:title",
           content: "bravo",
-        },
+        },{
+          property: "og:image",
+          content: "https://via.placeholder.com/150",
+        }
       ],
     });
   },
