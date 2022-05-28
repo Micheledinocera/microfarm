@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/microfarm/precache-manifest.674263a478dae63363547b3a942470a0.js"
+  "/microfarm/precache-manifest.24e30bfffeab24c2e2077a22e38b8085.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "microfarm"});

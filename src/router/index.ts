@@ -50,7 +50,7 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from, next) => {
-  if(to.name==RouterNames.HOME) router.push({name:RouterNames.MAIN_PAGE})
+  if (to.name == RouterNames.HOME) router.push({ name: RouterNames.MAIN_PAGE });
   else next();
 });
 
